@@ -96,9 +96,9 @@
   <ItemGroup>
     <Content Include="create.html" />
     <Content Include="dashboardseller.html" />
-    <Content Include="dashboardseller.html" />
     <Content Include="edit.html" />
     <Content Include="global.css" />
+    <Content Include="guestlist.html" />
     <Content Include="login.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -113,6 +113,8 @@
     <Content Include="reset.css" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="scripts\skeleton.html" />
+    <Content Include="ticketsales.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
