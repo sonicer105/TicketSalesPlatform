@@ -40,27 +40,41 @@
             </ul>
         </aside>
         <div class="content-right">
-            <h3>Event Title</h3>
-            <ul>
-                <li><a href="#">Event One</a></li>
-                <li><a href="#">Event Two</a></li>
-                <li><a href="#">Event Three</a></li>
-                <li><a href="#">Event Four</a></li>
-                <li><a href="#">Event Five</a></li>
-                <li><a href="#">Event Six</a></li>
-            </ul>
-        </div>
-        <div class="pagination">
-            <ul>
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="javascript:void(0)">&raquo;</a></li>
-            </ul>
+            <h3>Edit Profile</h3>
+            <form>
+                <label>
+                    Organizer Name<br />
+                    <input type="text" name="Organization Name" value="John White" size="60" />
+                </label><br />
+                <label>
+                    Address<br />
+                    <input type="text" name="Address" value="333 Georgia Street, Vancouver, V3I 8H2" size="60" />
+                </label><br />
+                <label>
+                    Primary Email:<br />
+                    <input type="email" name="email" value="johnw@eventx.com" size="60" >
+                </label><br />
+                <label>
+                    Describe Your Organization:<br />
+                    <textarea type="text" name="details" rows="3" cols="60">Family friendly events organizers, non-profit, committed to saving the enviornment and planet.</textarea>
+                </label><br />
+                <p>
+                    <h4>Change your password</h4>
+                    <label>
+                        Old Password<br />
+                        <input type="password" name="old password" size="60">
+                    </label><br />
+                    <label>
+                        New Password<br />
+                        <input type="password" name="new password" size="60">
+                    </label><br />
+                    <label>
+                        Confirm Password<br />
+                        <input type="password" name="confirm password" size="60">
+                    </label><br />
+                </p>
+                <input type="submit" value="Save Changes"/>
+            </form>
         </div>
 
 		<!-- EDIT ABOVE THIS LINE -->
