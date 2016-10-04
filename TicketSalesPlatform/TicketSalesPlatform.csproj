@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="create.html" />
+    <Content Include="dashboardadmin.html" />
     <Content Include="dashboardseller.html" />
     <Content Include="edit.html" />
     <Content Include="global.css" />
