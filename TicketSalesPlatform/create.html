@@ -34,23 +34,38 @@
     </header>
     <!-- End of Header -->
     <!-- Content -->
-    <section>
+    <div id="form-wrapper">
         <!-- EDIT BELOW THIS LINE -->
         <h1>Create Event</h1>
-        <div id="form-wrapper">
-            <form id="create-form">
-                <label id="form-label">Title: </label>
-                <label id="form-label">Type: </label>
-                <label id="form-label">Location: </label>
-                <label id="form-label">Time: </label>
-                <label id="form-label">Date: </label>
-                <label id="form-label">Description: </label>
-                <label id="form-label">Ticket Type: </label>
-                <label id="form-label">Event Type: </label>
-            </form>
-        </div>
+
+        <form id="create-form" method="post" action="#" enctype="multipart/form-data">
+            <label id="form-label" for="form-title">Title: </label><br />
+                <input type="text" name="form-title" id="form-title" size="30" maxlength="25" /><br />
+            <label id="form-label">Organizers: </label><br />
+                <input type="text" name="form-organizers" id="form-organizers" size="30" maxlength="25" /><br />
+            <label id="form-label">Location: </label><br />
+                <input type="text" name="form-location" id="form-location" size="30" maxlength="25" /><br />
+            <label id="form-label">Time: </label><br />
+                <input type="text" name="form-time" id="form-time" size="30" maxlength="25" /><br />
+            <label id="form-label">Date: </label><br />
+                <input type="text" name="form-date" id="form-date" size="30" maxlength="25" /><br />
+            <label id="form-label">Description: </label><br />
+                <textarea type="text" name="form-title" id="form-title" cols="30" rows="3" >Please describe the event...</textarea><br />
+            <label id="form-label">Ticket Type: </label><br />
+                <select name="form-dropdown" id="form-dropdown">
+                    <option value="Free">Free</option>
+                    <option value="Paid">Paid</option>
+                    <option value="Donation">Donation</option>
+                </select><br />
+            <label id="form-label">Event Scope: </label><br />
+                Private <input type="radio" name="event-scope" value="Private" checked="checked"/>
+                Public <input type="radio" name="event-scope" value="Public" /><br />
+            <input type="button" name="create-event-button" value="Create Event"/>
+
+        </form>
+
         <!-- EDIT ABOVE THIS LINE -->
-    </section>
+    </div>
     <!-- End of Content -->
     <!-- Footer -->
     <footer>
