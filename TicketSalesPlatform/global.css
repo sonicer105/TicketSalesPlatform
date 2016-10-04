@@ -1,11 +1,34 @@
 @import "reset.css";
 header {
+	background-color:	#000;
 	width:				100%;
 	box-shadow:			0 5px 7px #888888;
 }
-#Login {
-	text-align:			right;
+section {
+	margin:				0 10%;
+}
+footer {
 	width:				100%;
+	text-align:			center;
+}
+h1 { 
+	font-size:			2em;
+	margin:				0.67em 0;
+	font-weight:		bold;
+}
+h2 {
+	font-size:			1.5em;
+	margin:				0.83em 0;
+	font-weight:		bold;
+}
+h3 { 
+	font-size:			1.17em;
+	margin:				1em 0;
+	font-weight:		bold;
+}
+#Login {
+	float:				right;
+	text-align:			right;
 }
 #Logo {
 	display:			inline-block;
@@ -13,27 +36,48 @@ header {
 	height:				128px;
 }
 #LogoText {
+	color:				#fff;
 	display:			inline-block;
 	vertical-align:		middle;
 	font-family:		impact, sans-serif;
 	font-size:			72pt;
+	margin:				0;
+}
+#Querry {
+
+}
+.NavMain {
+	width:				100%;
 }
 .Nav {
 	display:			inline-block;
 }
-.NavItem {
-
+.NavRight {
+	float:				right;
 }
 .NavLink {
+	color:				#fff !important;
 	padding:			10px;
 	text-decoration:	none;
-	color:				#000;
 }
 .NavLink:visited {
 	color:				#000;
 }
-@media only screen and (max-width: 700px) {
+.LoginButton {
+	color:				#fff;
+	display:			inline-block;
+	text-decoration:	none;
+	border:				solid;
+	border-width:		2px;
+	border-radius:		7px;
+	padding:			5px 15px;
+	margin:				5px 5px;
+}
+@media only screen and (max-width: 800px) {
 	#LogoText {
 		font-size:		45pt;
+	}
+	.NavRight {
+		float:			none;
 	}
 }
