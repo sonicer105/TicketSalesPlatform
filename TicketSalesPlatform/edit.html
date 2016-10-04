@@ -1,15 +1,15 @@
 ﻿<!--
 @author: Asfand Tareen
-@skeleton: Elias    
+@skeleton: Elias
 @Group Design Assignment
 @Instructor: Patt Mcgee
-@Description: This page creates an Event. 
+@Description: This page  edits an Event.
 -->
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Create Event</title>
+    <title>Edit Event</title>
     <link rel="stylesheet" type="text/css" href="global.css" />
 </head>
 <body>
@@ -36,31 +36,32 @@
     <!-- Content -->
     <div id="form-wrapper">
         <!-- EDIT BELOW THIS LINE -->
-        <h1>Create Event</h1>
+        <h1>Update Event</h1>
 
         <form id="create-form" method="post" action="#" enctype="multipart/form-data">
             <label id="form-label" for="form-title">Title: </label><br />
-                <input type="text" name="form-title" id="form-title" size="30" maxlength="25" /><br />
+            <input type="text" name="form-title" id="form-title" size="30" maxlength="25" value="Terry Fox Run Fall 2017"/><br />
             <label id="form-label">Organizers: </label><br />
-                <input type="text" name="form-organizers" id="form-organizers" size="30" maxlength="25" /><br />
+            <input type="text" name="form-organizers" id="form-organizers" size="30" maxlength="25" value="David Buff, Alexa White"/><br />
             <label id="form-label">Location: </label><br />
-                <input type="text" name="form-location" id="form-location" size="30" maxlength="25" /><br />
+            <input type="text" name="form-location" id="form-location" size="30" maxlength="25" value="555 Seyour St., Vancouver, BC"/><br />
             <label id="form-label">Time: </label><br />
-                <input type="text" name="form-time" id="form-time" size="30" maxlength="25" /><br />
+            <input type="text" name="form-time" id="form-time" size="30" maxlength="25" value="5:30 PM to 9:00 PM"/><br />
             <label id="form-label">Date: </label><br />
-                <input type="text" name="form-date" id="form-date" size="30" maxlength="25" /><br />
+            <input type="text" name="form-date" id="form-date" size="30" maxlength="25" value="September 6, 2017"/><br />
             <label id="form-label">Description: </label><br />
-                <textarea type="text" name="form-title" id="form-title" cols="30" rows="3" >Please describe the event...</textarea><br />
+            <textarea type="text" name="form-title" id="form-title" cols="30" rows="3">Terry Fox Run is organized by several organizations every year to raise funds for cancer research.</textarea><br />
             <label id="form-label">Ticket Type: </label><br />
-                <select name="form-dropdown" id="form-dropdown">
-                    <option value="Free">Free</option>
-                    <option value="Paid">Paid</option>
-                    <option value="Donation">Donation</option>
-                </select><br />
+            <select name="form-dropdown" id="form-dropdown">
+                <option value="Free">Free</option>
+                <option value="Paid">Paid</option>
+                <option value="Donation" selected="selected">Donation</option>
+            </select><br />
             <label id="form-label">Event Scope: </label><br />
-                Private <input type="radio" name="event-scope" value="Private" checked="checked"/>
-                Public <input type="radio" name="event-scope" value="Public" /><br />
-            <input type="button" name="create-event-button" value="Create Event"/>
+            Private <input type="radio" name="event-scope" value="Private" checked="checked" />
+            Public <input type="radio" name="event-scope" value="Public" checked="checked" /><br />
+            <input type="button" name="edit-event-button" value="Update Event" />
+            <input type="button" name="delete-event-button" value="Delete Event" />
 
         </form>
 
