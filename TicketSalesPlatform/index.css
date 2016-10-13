@@ -1,4 +1,7 @@
-﻿.indexContent{
+﻿em{
+    text-decoration:    underline;
+}
+.indexContent{
     overflow-x:         hidden;
     padding:            0;
     margin:             0;
@@ -17,6 +20,31 @@
 }
 .contentNew {
     float:              right;
+}
+.contentEvent {
+}
+.contentEvent img{
+    padding:            0 1em 1em 0;
+}
+.contentEvent p{
+    padding:            0.5em 0;
+}
+#purchaseTicket {
+    background:         #404040;
+    background-image:   -webkit-linear-gradient(top, #404040, #000000);
+    background-image:   -moz-linear-gradient(top, #404040, #000000);
+    background-image:   -ms-linear-gradient(top, #404040, #000000);
+    background-image:   -o-linear-gradient(top, #404040, #000000);
+    background-image:   linear-gradient(to bottom, #404040, #000000);
+    font-family:        Arial;
+    color:              #fff;
+    font-size:          24px;
+    padding:            10px;
+    text-decoration:    none;
+}
+
+#purchaseTicket:hover {
+  background: #404040;
 }
 .event {
     padding:            0.5em 0.25em;
