@@ -11,20 +11,35 @@
     <meta charset="utf-8" />
     <title>EventX - Register</title>
     <link rel="stylesheet" type="text/css" href="global.css" />
+    <link rel="stylesheet" type="text/css" href="others.css" />
 </head>
 <body>
     <!-- Header -->
     <header>
         <img id="Logo" src="Ticket.png" alt="EventX Logo">
         <h1 id="LogoText">EventX Tickets</h1>
+        <nav>
+            <ul class="NavMain">
+                <li class="Nav"><a class="Nav NavLink" href="#">Home</a></li>
+                <li class="Nav"><a class="Nav NavLink" href="#">All Events</a></li>
+                <li class="Nav"><a class="Nav NavLink" href="#">New Events</a></li>
+                <li class="Nav"><a class="Nav NavLink" href="#">Popular Events</a></li>
+                <li class="Nav NavRight"><a class="Nav NavLink" href="login.html">Login</a></li>
+                <li class="Nav NavRight"><a class="Nav NavLink" href="register.html">Register</a></li>
+                <li class="Nav NavRight">
+                    <input id="Querry" type="text" value="Search..." />
+                    <a class="Nav NavLink" href="#">Search</a>
+                </li>
+            </ul>
+        </nav>
 
     </header>
     <!-- End of Header -->
     <!-- Content -->
-    <div id="login-wrapper">
+    <div id="register-wrapper">
         <!-- EDIT BELOW THIS LINE -->
         <h1>Register with EventX</h1>
-        <h2>All fields are mandatory.</h2>
+        <h2>*All fields are mandatory.</h2>
 
         <form id="login-form" method="post" action="#" enctype="multipart/form-data">
             <label id="form-label" for="register-name">Full Name: </label><br />
@@ -35,8 +50,7 @@
             <input type="password" name="register-password" id="register-password" size="30" maxlength="25" /><br />
             <label id="form-label" for="register-password-retype">Re-type Password: </label><br />
             <input type="password" name="register-password-retype" id="register-password-retype" size="30" maxlength="25" /><br />
-            <input type="button" name="register-button" value="Register Now!" />
-
+            <input type="button" name="register-button" value="Register Now!" id="reg-button"/>
         </form>
 
         <!-- EDIT ABOVE THIS LINE -->

@@ -2,7 +2,7 @@
 @author: Max Wu
 @Group Design Assignment
 @Instructor: Patt Mcgee
-@Description: This is the guest list page for sellers
+@Description: This is the profile page for sellers.
 -->
 <!DOCTYPE html>
 <html>
@@ -20,7 +20,7 @@
         <nav>
             <ul class="NavMain">
                 <li class="Nav"><a class="Nav NavLink" href="#">Home</a></li>
-                <li class="Nav NavRight"><a class="Nav NavLink" href="#">Logged in: Alexa | Log Out</a></li>
+                <li class="Nav NavRight"><a class="Nav NavLink" href="#">Logged in: Stella (ADMIN) | Log Out</a></li>
                 <li class="Nav NavRight">
                     <input id="Querry" type="text" value="Search..." />
                     <a class="Nav NavLink" href="#">Search</a>
@@ -33,56 +33,59 @@
 	<section>
 		<!-- EDIT BELOW THIS LINE -->
         <aside>
-            <h2>My Dashboard</h2>
+            <h2>Administrators Dashboard</h2>
             <ul>
-                <li><a href="dashboardseller.html">Manage Events</a></li>
-                <li><a href="create.html">Create Events</a></li>
-                <li><a href="profileseller.html">Profile</a></li>
-                <li><a href="ticketsales.html">Ticket Sales</a></li>
-                <li><a href="guestlist.html">Guest Lists</a></li>
+                <li><a href="admin-events.html">Manage Event(s)</a></li>
+                <li><a href="admin-users.html">Manage User(s)</a></li>
+                <li><a href="profileadmin.html"> My Profile</a></li>
             </ul>
         </aside>
         <div class="content-right">
-            <h3>Download Available Guest Lists</h3>
-            <p>Select One or More Events</p><button>Bulk Download</button><br />
+            <h3>All Events</h3>
+            <select>
+                <option value="Bulk Actions">BulkActions</option>
+                <option value="Edit">Edit</option>
+                <option value="Delete">Delete</option>
+            </select>
+            <button>Apply</button><br />
             <table>
                 <tr>
                     <th><input type="checkbox" name="checkall"></th>
-                    <th>Title</th>
-                    <th>List</th>
+                    <th>Username</th>
+                    <th>User ID</th>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="check"></td>
-                    <td><a href="#">Camp Choice for Kids Benefits Gala</a></td>
-                    <td><button>Download Guest List</button></td>
+                    <td><a href="#">Alexa White</a></td>
+                    <td>1</td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="check"></td>
-                    <td><a href="#">Terry Fox Run Fall 2017</a></td>
-                    <td><button>Download Guest List</button></td>
+                    <td><a href="#">Alexa White</a></td>
+                    <td>2</td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="check"></td>
-                    <td><a href="#">2016 Land Awards Gala</a></td>
-                    <td><button>Download Guest List</button></td>
+                    <td><a href="#">Alexandler Green</a></td>
+                    <td>3</td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="check"></td>
-                    <td><a href="#">Five Alarm Funk with Tonye at Imperial Theatre</a></td>
-                    <td><button>Download Guest List</button></td>
+                    <td><a href="#">Sohpie White</a></td>
+                    <td>4</td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="check"></td>
-                    <td><a href="#">Traction Guest Event</a></td>
-                    <td><button>Download Guest List</button></td>
+                    <td><a href="#">Tim Brown</a></td>
+                    <td>5</td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="check"></td>
-                    <td><a href="#">Oscars of Jiu-Jitsu</a></td>
-                    <td><button>Download Guest List</button></td>
+                    <td><a href="#">Oscars Lang</a></td>
+                    <td>6</td>
                 </tr>
 
-           </table>
+            </table>
             <div class="pagination">
                 <ul>
                     <li><a href="#">&laquo;</a></li>
@@ -96,7 +99,6 @@
                 </ul>
             </div>
         </div>
-
 
 		<!-- EDIT ABOVE THIS LINE -->
 	</section>
