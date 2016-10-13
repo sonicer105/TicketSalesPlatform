@@ -1,0 +1,103 @@
+﻿h1,h2,h3,a,p,li,table {
+    font-family: sans-serif;
+}
+
+
+.content-right {
+    float: left;
+    height: 700px;
+    margin-left: 80px;
+}
+
+aside {
+    float:left;
+}
+
+aside li {
+    background-color: black;
+    padding: 15px;
+    padding-left: 20px;
+    border-bottom: 1px solid white;
+    width: 200px;
+}
+aside li a {
+    line-height: 30px;
+    text-decoration: none;
+    color: yellow;
+}
+
+.pagination {
+    clear: both;
+    margin: 0 auto;
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.pagination li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.pagination li a {
+    line-height: 40px;
+    
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+
+
+.pagination li:first-child,
+.pagination li:last-child {
+    border: none;
+}
+
+table {
+    border: 1px solid white;
+    margin-bottom: 20px;
+    background-color: #d7d7d7;
+}
+
+tr {
+    border: 1px solid white;
+}
+
+td {
+    border: 1px solid white;
+    padding: 15px;
+}
+
+td a {
+    color: black;
+    font-weight: bold;
+}
+
+th:first-child {
+    padding-right: 50px;
+}
+th:nth-child(2) {
+    width: 400px;
+}
+
+tr {
+    height: 40px;
+}
+
+.pagination ul li {
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+
+form input,
+form textarea {
+    width: 600px;
+    margin-top: 15px;
+}

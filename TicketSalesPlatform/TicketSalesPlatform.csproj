@@ -115,6 +115,7 @@
     <Content Include="reset.css" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="others.css" />
     <Content Include="scripts\skeleton.html" />
     <Content Include="ticketsales.html" />
     <Content Include="Web.config" />
