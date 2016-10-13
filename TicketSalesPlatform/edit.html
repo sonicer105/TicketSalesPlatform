@@ -11,6 +11,7 @@
     <meta charset="utf-8" />
     <title>Edit Event</title>
     <link rel="stylesheet" type="text/css" href="global.css" />
+    <link rel="stylesheet" type="text/css" href="others.css" />
 </head>
 <body>
     <!-- Header -->
@@ -20,11 +21,7 @@
         <nav>
             <ul class="NavMain">
                 <li class="Nav"><a class="Nav NavLink" href="#">Home</a></li>
-                <li class="Nav"><a class="Nav NavLink" href="#">All Events</a></li>
-                <li class="Nav"><a class="Nav NavLink" href="#">New Events</a></li>
-                <li class="Nav"><a class="Nav NavLink" href="#">Popular Events</a></li>
-                <li class="Nav NavRight"><a class="Nav NavLink" href="#">Login</a></li>
-                <li class="Nav NavRight"><a class="Nav NavLink" href="#">Register</a></li>
+                <li class="Nav NavRight"><a class="Nav NavLink" href="#">Logged in: Alexa | Log Out</a></li>
                 <li class="Nav NavRight">
                     <input id="Querry" type="text" value="Search..." />
                     <a class="Nav NavLink" href="#">Search</a>
@@ -34,49 +31,63 @@
     </header>
     <!-- End of Header -->
     <!-- Content -->
-    <div id="form-wrapper">
-        <!-- EDIT BELOW THIS LINE -->
-        <h1>Update Event</h1>
+    <section>
+        <aside>
+            <h2>My Dashboard</h2>
+            <ul>
+                <li><a href="dashboardseller.html">Manage Events</a></li>
+                <li><a href="create.html">Create Events</a></li>
+                <li><a href="profileseller.html">Profile</a></li>
+                <li><a href="ticketsales.html">Ticket Sales</a></li>
+                <li><a href="guestlist.html">Guest Lists</a></li>
+            </ul>
+        </aside>
+        <div class="content-right">
+            <div id="form-wrapper">
+                <!-- EDIT BELOW THIS LINE -->
+                <h1>Update Event</h1>
 
-        <form id="create-form" method="post" action="#" enctype="multipart/form-data">
-            <label id="form-label" for="form-title">Title: </label><br />
-            <input type="text" name="form-title" id="form-title" size="30" maxlength="25" value="Terry Fox Run Fall 2017"/><br />
-            <label id="form-label">Organizers: </label><br />
-            <input type="text" name="form-organizers" id="form-organizers" size="30" maxlength="25" value="David Buff, Alexa White"/><br />
-            <label id="form-label">Location: </label><br />
-            <input type="text" name="form-location" id="form-location" size="30" maxlength="25" value="555 Seyour St., Vancouver, BC"/><br />
-            <label id="form-label">Time: </label><br />
-            <input type="text" name="form-time" id="form-time" size="30" maxlength="25" value="5:30 PM to 9:00 PM"/><br />
-            <label id="form-label">Date: </label><br />
-            <input type="text" name="form-date" id="form-date" size="30" maxlength="25" value="September 6, 2017"/><br />
-            <label id="form-label">Description: </label><br />
-            <textarea type="text" name="form-title" id="form-title" cols="30" rows="3">Terry Fox Run is organized by several organizations every year to raise funds for cancer research.</textarea><br />
-            <label id="form-label">Ticket Type: </label><br />
-            <select name="form-dropdown" id="form-dropdown">
-                <option value="Free">Free</option>
-                <option value="Paid">Paid</option>
-                <option value="Donation" selected="selected">Donation</option>
-            </select><br />
-            <label id="form-label">Event Scope: </label><br />
-            Private <input type="radio" name="event-scope" value="Private" checked="checked" />
-            Public <input type="radio" name="event-scope" value="Public" checked="checked" /><br />
-            <input type="button" name="edit-event-button" value="Update Event" />
-            <input type="button" name="delete-event-button" value="Delete Event" />
+                <form id="edit-form" method="post" action="#" enctype="multipart/form-data">
+                    <label id="form-label" for="form-title">Title: </label><br />
+                    <input type="text" name="form-title" id="form-title" size="30" maxlength="25" value="Terry Fox Run Fall 2017" /><br />
+                    <label id="form-label">Organizers: </label><br />
+                    <input type="text" name="form-organizers" id="form-organizers" size="30" maxlength="25" value="David Buff, Alexa White" /><br />
+                    <label id="form-label">Location: </label><br />
+                    <input type="text" name="form-location" id="form-location" size="30" maxlength="25" value="555 Seyour St., Vancouver, BC" /><br />
+                    <label id="form-label">Time: </label><br />
+                    <input type="text" name="form-time" id="form-time" size="30" maxlength="25" value="5:30 PM to 9:00 PM" /><br />
+                    <label id="form-label">Date: </label><br />
+                    <input type="text" name="form-date" id="form-date" size="30" maxlength="25" value="September 6, 2017" /><br />
+                    <label id="form-label">Description: </label><br />
+                    <textarea type="text" name="form-title" id="form-title" cols="30" rows="3">Terry Fox Run is organized by several organizations every year to raise funds for cancer research.</textarea><br />
+                    <label id="form-label">Ticket Type: </label><br />
+                    <select name="form-dropdown" id="form-dropdown">
+                        <option value="Free">Free</option>
+                        <option value="Paid">Paid</option>
+                        <option value="Donation" selected="selected">Donation</option>
+                    </select><br />
+                    <label id="form-label">Event Scope: </label><br />
+                    Private <input type="radio" name="event-scope" value="Private" checked="checked" id="private" />
+                    Public <input type="radio" name="event-scope" value="Public" checked="checked" id="public"/><br />
+                    <input type="button" name="edit-event-button" value="Update Event"  id="edit-button"/>
+                    <input type="button" name="delete-event-button" value="Delete Event" id="delete-button" />
 
-        </form>
+                </form>
 
-        <!-- EDIT ABOVE THIS LINE -->
-    </div>
-    <!-- End of Content -->
-    <!-- Footer -->
-    <footer>
-        <hr />
-        <a href="#">Terms of Service</a> -
-        <a href="#">Privacy Policy</a> -
-        <a href="#">Legal</a> -
-        <a href="#">Contact Us</a>
-    </footer>
-    <!-- End of Footer -->
+                <!-- EDIT ABOVE THIS LINE -->
+            </div>
+        </div>
+        </section>
+        <!-- End of Content -->
+        <!-- Footer -->
+        <footer>
+            <hr />
+            <a href="#">Terms of Service</a> -
+            <a href="#">Privacy Policy</a> -
+            <a href="#">Legal</a> -
+            <a href="#">Contact Us</a>
+        </footer>
+        <!-- End of Footer -->
 </body>
 </html>
 

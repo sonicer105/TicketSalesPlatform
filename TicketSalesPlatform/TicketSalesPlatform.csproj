@@ -94,6 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin-events.html" />
+    <Content Include="admin-users.html" />
     <Content Include="create.html" />
     <Content Include="dashboardadmin.html" />
     <Content Include="dashboardseller.html" />
@@ -112,6 +114,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="profileadmin.html" />
     <Content Include="profileseller.html" />
     <Content Include="register.html" />
     <Content Include="reset.css" />
