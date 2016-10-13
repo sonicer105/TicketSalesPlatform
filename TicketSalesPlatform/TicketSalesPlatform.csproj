@@ -100,9 +100,10 @@
     <Content Include="dashboardadmin.html" />
     <Content Include="dashboardseller.html" />
     <Content Include="edit.html" />
+    <Content Include="event-purchase.html" />
+    <Content Include="event.html" />
     <Content Include="global.css" />
     <Content Include="guestlist.html" />
-    <Content Include="event.html" />
     <Content Include="index.css" />
     <Content Include="login.html" />
     <Content Include="packages.config" />

@@ -121,7 +121,9 @@ form textarea {
 #edit-button,
 #delete-button,
 #create-button,
-#save-button {
+#save-button,
+#pay-button-1,
+#pay-button-2 {
     width: 160px;
     border-radius: 15px;
     font-size: 1.1em;

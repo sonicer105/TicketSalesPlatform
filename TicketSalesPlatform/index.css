@@ -1,6 +1,9 @@
 ﻿em{
     text-decoration:    underline;
 }
+h1,h2, h3,a,p {
+    font-family: sans-serif;
+}
 .indexContent{
     overflow-x:         hidden;
     padding:            0;
@@ -74,4 +77,21 @@ footer {
 	.contentNew {
 		float:			none;
 	}
+}
+
+#pay-button-1,
+#pay-button-2 {
+    width: 160px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    padding: 10px;
+    background-color: black;
+    color: yellow;
+}
+
+#purchase-form label {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 20px 0;
+    display: block;
 }
