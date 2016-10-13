@@ -1,0 +1,49 @@
+﻿.indexContent{
+    overflow-x:         hidden;
+    padding:            0;
+    margin:             0;
+    display:            inline-block;
+    border:             solid 1px #000;
+    width:              49.5%;
+}
+.indexContent h2 {
+    margin:             0;
+    padding:            0.5em;
+    color:              #fff;
+    background-color:   #000;
+}
+.contentPopular {
+    float:              left;
+}
+.contentNew {
+    float:              right;
+}
+.event {
+    padding:            0.5em 0.25em;
+    display:            block;
+    text-decoration:    none;
+    color:              #000;
+}
+.event:hover{
+    background-color:   #888
+}
+.event h3{
+    margin:             0;
+}
+footer {
+    padding:            1em 0;
+    width:              100%;
+    clear:              both;
+}
+@media only screen and (max-width: 800px) {
+    .indexContent {
+        display:        block;
+        width:          auto;
+    }
+	.contentPopular {
+		float:			none;
+	}
+	.contentNew {
+		float:			none;
+	}
+}
