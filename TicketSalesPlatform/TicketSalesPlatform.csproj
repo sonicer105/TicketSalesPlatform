@@ -124,6 +124,7 @@
     <Content Include="others.css" />
     <Content Include="scripts\skeleton.html" />
     <Content Include="index.html" />
+    <Content Include="site-map.html" />
     <Content Include="TerryFoxRun.jpg" />
     <Content Include="Ticket.png" />
     <Content Include="ticketpurchases.html" />
